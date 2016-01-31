@@ -1,0 +1,42 @@
+$primary-color: #00cccc;
+$dark-primary-color: darken($primary-color, 20%);
+$secondary-color: #39ac39;
+$main-text-color: #404040;
+
+@mixin radial-gradient($from, $to) {
+    background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+    background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background-color: $from;
+}
+
+
+
+body{
+	font-family: "Arial";
+	@include radial-gradient($primary-color, $secondary-color);
+	color: $main-text-color;
+	text-align: center;
+}
+
+
+#buttons{
+	margin: 10px;
+	button {
+		background: $secondary-color;
+		color: $main-text-color;
+		border: none;
+		box-shadow: 10px 5px 5px $dark-primary-color;
+		}
+}
+
+#location, #tempDisplay{
+	margin: 8px;
+}
+
+#description {
+	font-style: italic;
+}

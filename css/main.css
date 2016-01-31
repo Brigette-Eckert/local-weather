@@ -1,0 +1,27 @@
+body {
+  font-family: "Arial";
+  background: -moz-radial-gradient(center, circle cover, #00cccc 0%, #39ac39 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #00cccc), color-stop(100%, #39ac39));
+  background: -webkit-radial-gradient(center, circle cover, #00cccc 0%, #39ac39 100%);
+  background: -o-radial-gradient(center, circle cover, #00cccc 0%, #39ac39 100%);
+  background: -ms-radial-gradient(center, circle cover, #00cccc 0%, #39ac39 100%);
+  background: radial-gradient(center, circle cover, #00cccc 0%, #39ac39 100%);
+  background-color: #00cccc;
+  color: #404040;
+  text-align: center; }
+
+#buttons {
+  margin: 10px; }
+  #buttons button {
+    background: #39ac39;
+    color: #404040;
+    border: none;
+    box-shadow: 10px 5px 5px #006666; }
+
+#location, #tempDisplay {
+  margin: 8px; }
+
+#description {
+  font-style: italic; }
+
+/*# sourceMappingURL=main.css.map */
