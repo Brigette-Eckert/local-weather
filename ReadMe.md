@@ -1,4 +1,3 @@
-http://git.bbeckert.com/local-weather/
 
 #What I learned from this project:
  ```
